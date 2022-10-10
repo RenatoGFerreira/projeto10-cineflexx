@@ -7,9 +7,10 @@ import { useEffect, useState } from "react"
 
 export default function FilmePage() {
 
+
     const { filmeId } = useParams({})
     const [dataFilme, setDataFilme] = useState({})
-    console.log(dataFilme.days)
+
 
     useEffect(() => {
         const URL = `https://mock-api.driven.com.br/api/v5/cineflex/movies/${filmeId}/showtimes`

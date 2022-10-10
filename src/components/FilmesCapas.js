@@ -2,10 +2,11 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 export default function SubCorpo({ img }) {
+    console.log(img)
     return (
         <FilmeCapa>
             <Link to={`/filme/${img.id}`}>
-                <img src={img.posterURL} alt={`capa do filme ${img.title} `} />
+                <img src={img.posterURL} alt={`capa do filme ${img.title} `} filmeDados={img}/>
             </Link>
         </FilmeCapa>
     )

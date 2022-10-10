@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
+    html ,body{
+        font-family: 'Roboto', sans-serif;
+    }
+
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -14,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     figure, figcaption, footer, header, hgroup, 
     menu, nav, output, ruby, section, summary,
     time, mark, audio, video {
+        font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
         border: 0;

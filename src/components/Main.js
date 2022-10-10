@@ -10,7 +10,6 @@ export default function Main() {
 
     const [imagens, setImagens] = useState([])
 
-
     useEffect(() => {
 
         const URL = "https://mock-api.driven.com.br/api/v5/cineflex/movies"
