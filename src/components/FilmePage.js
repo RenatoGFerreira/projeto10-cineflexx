@@ -24,14 +24,15 @@ export default function FilmePage() {
         })
     }, [filmeId])
 
-    //{movie.days.map((session) => <Session key={session.id} session={session} />)}
 
     return (
         <ScreenContainer>
             <div>
                 <h1>Selecione o horário </h1>
             </div>
-            <FilmeHorario/>
+
+            <FilmeHorario />
+
             <Rodape>
                 <FilmeSelecionado>
                     <img src={dataFilme.posterURL} alt="descrição do filme" />

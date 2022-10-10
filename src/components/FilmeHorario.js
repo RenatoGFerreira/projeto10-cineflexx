@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
+import SessaoPage from "./SessaoPage"
 
-export default function FilmeHorario({item}){
+export default function FilmeHorario() {
 
-    
-    return(
+    return (
         <FilmeHorariosty>
-            <h2>Quinta-Feira - 24/06/2021</h2>
-            <button>15:00</button>
+            <h2>domingo - 21/03/2021</h2>
+            <Link to={`/sessao/${1}`}>
+                    <button>17:00</button>
+            </Link>
+
         </FilmeHorariosty>
     )
 }

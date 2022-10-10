@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 export default function SessaoPage() {
@@ -73,13 +74,15 @@ export default function SessaoPage() {
                 </Separa>
             </OpcoesPoltronas>
             <InputsDados>
-                <p>Nome do COMprador</p>
-                <p>Input</p>
+                <p>Nome do Comprador</p>
+                <input type="text" placeholder="Digite seu nome" />
                 <p>CPF do comprador</p>
-                <p>Input</p>
+                <input type="number" placeholder="CPF" />
             </InputsDados>
             <FinalizaEScolha>
+                <Link to={"/sucesso"}>
                 <button>Reservar Assentos</button>
+                </Link>
             </FinalizaEScolha>
             <Rodape>
                 <FilmeSelecionado>
@@ -108,7 +111,6 @@ const ScreenContainer = styled.div`
     
 `
 const Poltronas = styled.div`
-    border: 1px solid red;
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -123,7 +125,7 @@ const Poltronas = styled.div`
 
 `
 const OpcoesPoltronas = styled.div`
-    border: 1px solid red;
+
     width: 70%;
     margin-top: 5px;
     display: flex;
@@ -141,7 +143,7 @@ const Separa = styled.div`
     text-align: center;
 `
 const InputsDados = styled.div`
-    border: 1px solid red;
+    margin: 10px;
 `
 const FinalizaEScolha = styled.div`
 button{

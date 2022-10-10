@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-export default function SucessoPage(){
-    return(
+export default function SucessoPage() {
+    return (
         <ScreenContainer>
             <div>
                 <h1>Pedido Feito com Sucesso!</h1>
@@ -22,7 +23,9 @@ export default function SucessoPage(){
                 <p>CPF: 123.456.789-10</p>
             </Comprador>
             <Finalizacao>
-                <button>Voltar para Home</button>
+                <Link to={"/"}>
+                    <button>Voltar para Home</button>
+                </Link>
             </Finalizacao>
         </ScreenContainer>
 
@@ -33,7 +36,7 @@ const ScreenContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    height: 100vh;
 
     
     h1{
@@ -42,21 +45,34 @@ const ScreenContainer = styled.div`
         font-weight: 700;
         color: #247a6b;
     }
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
 
 `
 
 const FilmeSessao = styled.div`
-border: 1px solid red;
+margin-bottom: 20px;
 width: 80%;
 `
 const Ingressos = styled.div`
-border: 1px solid red;
+margin-bottom: 20px;
 width: 80%;
 `
 const Comprador = styled.div`
-border: 1px solid red;
+margin-bottom: 20px;
 width: 80%;
 `
 const Finalizacao = styled.div`
-border: 1px solid red;
+margin-bottom: 20px;
+    button{
+            background-color: #E8833A;
+            color: #fff;
+            height: 43px;
+            font-size: 18px;
+            border-radius: 3px;
+            margin-right: 10px ;
+        }
 `
